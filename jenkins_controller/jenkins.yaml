@@ -8,7 +8,6 @@ jenkins:
     globalMatrix:
       permissions:
         - "Overall/Administer:panda"
-
 unclassified:
   location:
     url: "http://192.168.44.44:8880/"
