@@ -9,4 +9,11 @@ services:
       - "8880:8080"
     volumes:
       - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+  sonarqube:
+    depends_on:
+      - jenkins
+    image: sonarqube:10.2.1-community
+    container_name: sonarqube
+    ports:
+      - "9000:9000"
     restart: always
