@@ -4,6 +4,9 @@ services:
   jenkins:
     build: jenkins_controller
     container_name: jenkins
+    depends_on:
+      artifactory:
+        condition: service_healthy
     ports:
       - "50000:50000"
       - "8880:8080"
