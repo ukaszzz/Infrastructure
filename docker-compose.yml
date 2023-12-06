@@ -12,6 +12,7 @@ services:
       - "8880:8080"
     volumes:
       - ./jenkins_controller/jenkins.yaml:/usr/share/jenkins/ref/jenkins.yaml
+      - ./jenkins_controller/jobs:/usr/share/jenkins/ref/jobs
     restart: always
   sonarqube:
     depends_on:
