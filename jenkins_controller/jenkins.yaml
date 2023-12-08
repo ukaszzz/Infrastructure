@@ -42,7 +42,7 @@ unclassified:
 tool:
   sonarRunnerInstallation:
     installations:
-    - name: "SonarScanner"
+    - name: "SonarQube"
       properties:
       - installSource:
           installers:
